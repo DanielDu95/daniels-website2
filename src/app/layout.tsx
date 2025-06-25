@@ -1,15 +1,23 @@
 // src/app/layout.tsx
 import "@/styles/globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Figtree } from "next/font/google"; // ✅ import Figtree
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+// Load font with a CSS variable
+const figtree = Figtree({
+  subsets: ["latin"],
+  variable: "--font-figtree",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Daniel Du - Full Stack Developer",
   description: "Portfolio website of Daniel Du, Full Stack Developer.",
+  icons: {
+    icon: "/images/hero.jpg",
+  },
 };
 
 export default function RootLayout({
@@ -18,9 +26,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>
-        <div className="flex flex-col min-h-screen ">
+    <html lang="en" suppressHydrationWarning className={figtree.variable}>
+      <body className="font-sans">
+        <div className="flex flex-col min-h-screen">
           <Header />
           {children}
           <Footer />

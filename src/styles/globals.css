@@ -9,9 +9,7 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
 
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-
+  --font-sans: var(--font-figtree);
   --color-primary: var(--primary);
   --color-primary-foreground: var(--primary-foreground);
 
@@ -46,7 +44,7 @@
 :root {
   --radius: 0.5rem;
 
-  --background: hsl(210, 40%, 98%);
+  --background: hsl(210, 20%, 94%);
   --foreground: hsl(210, 15%, 20%);
 
   --primary: hsl(220, 90%, 55%);
@@ -108,6 +106,7 @@
 @layer base {
   * {
     @apply border-border outline-ring/50;
+    scroll-behavior: smooth;
   }
   body {
     @apply bg-background text-foreground font-sans;
