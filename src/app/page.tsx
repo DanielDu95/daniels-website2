@@ -12,13 +12,13 @@ export default function HomePage() {
   return (
     <main className="flex flex-col items-center justify-center space-y-6 px-2 py-6">
       <Background />
-      <ScrollRevealSection delay={0.5}>
+      <ScrollRevealSection>
         <Hero />
       </ScrollRevealSection>
-      <ScrollRevealSection delay={0.2}>
+      <ScrollRevealSection>
         <ProjectsPreview />
       </ScrollRevealSection>
-      <ScrollRevealSection delay={0.2}>
+      <ScrollRevealSection>
         <SkillsPreview />
       </ScrollRevealSection>
 

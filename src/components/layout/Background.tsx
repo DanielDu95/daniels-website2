@@ -99,7 +99,7 @@ export function Background() {
   return (
     <div
       ref={ballRef}
-      className="fixed w-[400px] h-[400px] rounded-full bg-white blur-xl pointer-events-none z-[-1]"
+      className="fixed w-[400px] h-[400px] sm:w-[500px] sm:h-[500px] rounded-full bg-white blur-xl pointer-events-none z-[-1]"
       style={{ left: 0, top: 0 }}
     />
   );
