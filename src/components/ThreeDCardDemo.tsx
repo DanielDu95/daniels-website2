@@ -19,7 +19,7 @@ export function ThreeDCardDemo() {
             src="images/hero.jpg"
             height="240"
             width="240"
-            className="w-60 h-60 object-cover rounded-full  shadow-xl object-cover object-top"
+            className="w-60 h-60  rounded-full  shadow-xl object-cover object-top"
             alt="thumbnail"
           />
         </CardItem>
@@ -58,7 +58,7 @@ export function ThreeDCardDemo() {
           </CardItem>
           <CardItem translateZ={20}>
             <Button variant="outline">
-              <Link href="/contact">Contact Me</Link>
+              <Link href="mailto:danieldu1131@gmail.com">Contact Me</Link>
             </Button>
           </CardItem>
         </div>

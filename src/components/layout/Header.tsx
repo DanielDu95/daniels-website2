@@ -51,19 +51,21 @@ export function Header() {
 
       {/* Nav */}
       <nav className="flex items-center space-x-4 text-lg">
-        <a href="#about">
-          <Button variant="ghost">About</Button>
-        </a>
-        <a href="/#projects">
+        <Link href="/#about">
+          <Button variant="ghost" className="px-6 py-3 text-lg">
+            About
+          </Button>
+        </Link>
+        <Link href="/#projects">
           <Button variant="ghost" className="px-6 py-3 text-lg">
             Projects
           </Button>
-        </a>
-        <a href="/#skills">
+        </Link>
+        <Link href="/#skills">
           <Button variant="ghost" className="px-6 py-3 text-lg">
             Skills
           </Button>
-        </a>
+        </Link>
         <Link href="/photos">
           <Button variant="ghost" className="px-6 py-3 text-lg">
             Photos
