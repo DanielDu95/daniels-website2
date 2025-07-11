@@ -54,15 +54,21 @@ export function Header() {
         <a href="#about">
           <Button variant="ghost">About</Button>
         </a>
-        <a href="#projects">
-          <Button variant="ghost">Projects</Button>
+        <a href="/#projects">
+          <Button variant="ghost" className="px-6 py-3 text-lg">
+            Projects
+          </Button>
         </a>
-        <a href="#skills">
-          <Button variant="ghost">Skills</Button>
+        <a href="/#skills">
+          <Button variant="ghost" className="px-6 py-3 text-lg">
+            Skills
+          </Button>
         </a>
-        <a href="#contact">
-          <Button variant="ghost">Contact</Button>
-        </a>
+        <Link href="/photos">
+          <Button variant="ghost" className="px-6 py-3 text-lg">
+            Photos
+          </Button>
+        </Link>
       </nav>
     </header>
   );

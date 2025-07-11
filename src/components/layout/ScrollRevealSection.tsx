@@ -58,8 +58,10 @@ export function ScrollRevealSection({
       : direction === "down"
       ? "translateY(60px)"
       : "translateY(-60px)",
-    transition: `opacity 0.6s ease, transform 0.6s ease`,
-    transitionDelay: `${delay}s`,
+    transitionProperty: "opacity, transform",
+    transitionDuration: "0.6s, 0.6s",
+    transitionTimingFunction: "ease, ease",
+    transitionDelay: `${delay}s, ${delay}s`,
   };
 
   return (

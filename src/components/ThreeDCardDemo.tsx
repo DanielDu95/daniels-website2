@@ -4,6 +4,7 @@ import React from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
+import { FlipText } from "./ui/flip-text";
 
 export function ThreeDCardDemo() {
   return (
@@ -28,13 +29,13 @@ export function ThreeDCardDemo() {
           as="h1"
           className="text-5xl px-5 font-bold text-neutral-600 dark:text-white py-3"
         >
-          Hi, I&apos;m Daniel Du
+          <FlipText>Hi, I&apos;m Daniel Du</FlipText>
         </CardItem>
 
         <CardItem
           translateZ="40"
           as="h2"
-          className="text-2xl px-5 text-primary-500 py-3"
+          className="text-3xl px-5 text-primary-500 py-3"
         >
           Full Stack Developer
         </CardItem>
@@ -42,10 +43,11 @@ export function ThreeDCardDemo() {
         <CardItem
           as="p"
           translateZ="30"
-          className="py-3 px-5 text-neutral-500 text-md text-left dark:text-neutral-300"
+          className="py-3 px-5 text-neutral-500 text-md text-left text-xl dark:text-neutral-300"
         >
-          I build modern, performant web applications with React, TypeScript,
-          Node.js, and PostgreSQL.
+          I build fast, modern web applications using React, TypeScript,
+          Node.js, and PostgreSQL. My focus is on clean architecture, strong
+          performance, and great user experiences.
         </CardItem>
 
         <div className="flex justify-center space-x-4 mt-6">
