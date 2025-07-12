@@ -8,6 +8,7 @@ import {
   SiPostgresql,
   SiTailwindcss,
   SiPrisma,
+  SiJest,
 } from "react-icons/si";
 import * as Tooltip from "@radix-ui/react-tooltip";
 import { motion } from "framer-motion";
@@ -20,6 +21,7 @@ const skills = [
   { name: "PostgreSQL", progress: 75, icon: SiPostgresql },
   { name: "Tailwind CSS", progress: 92, icon: SiTailwindcss },
   { name: "Prisma", progress: 70, icon: SiPrisma },
+  { name: "Jest", progress: 70, icon: SiJest }, // ✅ New
 ];
 
 function getLevel(percent: number) {
@@ -70,13 +72,15 @@ export function SkillsPreview() {
                   className="px-3 py-2 bg-black text-white text-xs rounded shadow max-w-[220px]"
                   sideOffset={5}
                 >
-                  {`Proficient with ${name} – used in ${
-                    name === "React"
-                      ? "Balance Book, Task Master"
+                  {`Proficient with ${name} – ${
+                    name === "Jest"
+                      ? "used for unit and integration testing in Task Master."
+                      : name === "React"
+                      ? "used in Balance Book and Task Master."
                       : name === "Next.js"
-                      ? "Ecommerce App"
-                      : "multiple components"
-                  }.`}
+                      ? "used in Ecommerce App."
+                      : "used across multiple components and apps."
+                  }`}
                 </Tooltip.Content>
               </Tooltip.Portal>
             </Tooltip.Root>
