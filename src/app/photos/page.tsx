@@ -1,5 +1,12 @@
+import Gallery from "@/components/Gallery";
+import { div } from "framer-motion/client";
+
 const Photos = () => {
-  return <div>Photos</div>;
+  return (
+    <div>
+      <Gallery />
+    </div>
+  );
 };
 
 export default Photos;
