@@ -27,7 +27,7 @@ export function Header() {
           </Link>
           <div className="flex items-center space-x-2 text-gray-600 dark:text-gray-300">
             <Link
-              href="https://github.com/danieldu1131"
+              href="https://github.com/DanielDu95"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub"
